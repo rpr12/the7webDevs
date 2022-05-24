@@ -1,44 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The-7-WebDevs</title>
-    <!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-<!-- bootstrap-icons -->
-<link
-rel="stylesheet"
-href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css"
-/>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The-7-WebDevs</title>
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <!-- bootstrap-icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css" />
 </head>
+
 <body>
-    
-  
-   <!-- SECTION 1: NAVBAR -->
-   <section>
+
+
+  <!-- SECTION 1: NAVBAR -->
+  <section>
     <nav class="navbar fixed-top navbar-expand-lg justify-content-end navbar-dark bg-danger">
-        <div class="container">
-          <a class="navbar-brand" href="#">The 7 Web Devs</a>
-          <div class="d-flex justify-content-end">
+      <div class="container">
+        <a class="navbar-brand" href="#">The 7 Web Devs</a>
+        <div class="d-flex justify-content-end">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav justify-content-end">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">About</a>
-                  </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Portfolio</a>
+                <a class="nav-link active" aria-current="page" href="#About">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="#">Pricing</a>
+                <a class="nav-link active" aria-current="page" href="#Portfolio">Portfolio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="#">Contact</a>
+                <a class="nav-link active" href="#Pricing">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#Contact">Contact</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -53,333 +52,353 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.cs
             </ul>
           </div>
         </div>
-      </nav>
+        </div>
+    </nav>
+  </section>
+
+  <!-- SECTION 2: CAROUSEL -->
+
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
-</section>
-
-    <!-- SECTION 2: CAROUSEL -->
-
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img
-            src="https://mdbootstrap.com/img/Photos/Slides/img%20(35).jpg"
-            class="d-block w-100"
-            alt="..."
-          />
-          </div>
-          <div class="carousel-item">
-            <img
-            src="https://mdbootstrap.com/img/Photos/Slides/img%20(36).jpg"
-            class="d-block w-100"
-            alt="..."
-          />
-          </div>
-          <div class="carousel-item">
-            <img
-            src="https://mdbootstrap.com/img/Photos/Slides/img%20(37).jpg"
-            class="d-block w-100"
-            alt="..."
-          />
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(35).jpg" class="d-block w-100" alt="..." />
       </div>
-</section>
+      <div class="carousel-item">
+        <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(36).jpg" class="d-block w-100" alt="..." />
+      </div>
+      <div class="carousel-item">
+        <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(37).jpg" class="d-block w-100" alt="..." />
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  </section>
 
-<section>
+  <!-- SECTION 3: ABOUT US -->
 
-    <!-- SECTION 3: ABOUT US -->
+  <section id="About">
 
     <div class="container my-5">
-        <div class="row mx-5">
-          <div class="col ">
-            <p class="h1"> <span style="color:red">ABOUT</span> US</p>
+      <div class="row mx-5">
+        <div class="col ">
+          <p class="h1"> <span style="color:red">ABOUT</span> US</p>
+          <p>
+            ipsum dolor sit amet consectetur adipisicing elit. Vel sunt eaque sint autem consectetur dicta in nostrum illo nemo, pariatur deleniti ex consequatur eius ut illum enim unde officia nam!
+          </p>
 
-            <p>
-                 ipsum dolor sit amet consectetur adipisicing elit. Vel sunt eaque sint autem consectetur dicta in nostrum illo nemo, pariatur deleniti ex consequatur eius ut illum enim unde officia nam!
-             </p>
+          <button type="button" class="btn btn-link btn-danger btn-sm">Learn More</button>
 
-        <button type="button" class="btn btn-link btn-danger btn-sm">Learn More</button>
-
-          </div >
-          <div class="col">
-            <img src="/home-images/aboutus.jpeg" alt="">
-          </div>
-        </div>
-
-</section>
-
-<!-- SECTION 3: OUR SERVICES -->
-
-<section class="py-5" style="background-color: #D1D1D1;">
-<div class="text-center"> 
-    <p class="h1" > <span style="color:red">OUR</span> SERVICES</p>
-
-    <p>
-         ipsum dolor sit amet consectetur adipisicing elit. Vel sunt eaque sint autem consectetur dicta in nostrum illo nemo.
-     </p>
-   
-<div class="container my-5"  style="background-color:#fff">
-    <div class="row" style="border:8px solid #D1D1D1">
-      <div class="col" style="border:8px solid #D1D1D1">
-        <i class="bi bi-display" style="font-size: 40px"></i>
-        <p class="h1" > WEB DESIGN</p>
-        <p>
-          ipsum dolor sit amet consectetur adipisicing elit. Vel sunt eaque sint autem consectetur dicta in nostrum illo nemo.
-      </p>
-      </div>
-      <div class="col" style="background-color: red; border:8px solid #D1D1D1">
-        <i class="bi bi-pencil-square" style="font-size: 40px"></i>
-        <p class="h1" > GRAPHIC DESIGN</p>
-        <p>
-          ipsum dolor sit amet consectetur adipisicing elit. Vel sunt eaque sint autem consectetur dicta in nostrum illo nemo.
-      </p>
-      </div>
-      <div class="col" style="border:8px solid #D1D1D1">
-        <i class="bi bi-play-fill" style="font-size: 40px"></i>
-        <p class="h1" > TUTORING</p>
-        <p>
-          ipsum dolor sit amet consectetur adipisicing elit. Vel sunt eaque sint autem consectetur dicta in nostrum illo nemo.
-      </p>
-      </div>
-    </div>
-    <div class="row" style="border:8px solid #D1D1D1">
-      <div class="col" style="border:8px solid #D1D1D1">
-        <i class="bi bi-currency-dollar" style="font-size: 40px"></i>
-        <p class="h1" > MARKETING</p>
-        <p>
-          ipsum dolor sit amet consectetur adipisicing elit. Vel sunt eaque sint autem consectetur dicta in nostrum illo nemo.
-      </p>
-      </div>
-      <div class="col" style="border:8px solid #D1D1D1">
-        <i class="bi bi-search" style="font-size: 40px"></i>
-        <p class="h1" > SEO</p>
-        <p>
-          ipsum dolor sit amet consectetur adipisicing elit. Vel sunt eaque sint autem consectetur dicta in nostrum illo nemo.
-      </p>
-      </div>
-      <div class="col" style="border:8px solid #D1D1D1">
-        <i class="bi bi-facebook" style="font-size: 40px"></i>
-        <p class="h1" > SOCIAL MEDIA</p>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque hic impedit sunt repellendus, maiores nostrum illo reprehenderit.
-         
-      </p>
-      </div>
-    </div>
-  </div>
-</div>
-
-</section>
-
-<!-- SECTION 4: OUR LATEST WORK -->
-
-<section>
-
-<section class="py-5">
-  <div class="text-center"> 
-      <p class="h1" > LATEST <span style="color:red">WORK</span></p>
-  
-      <p>
-           ipsum dolor sit amet consectetur adipisicing elit. Vel sunt eaque sint autem consectetur dicta in nostrum illo nemo.
-       </p>
-<div class="mt-5" >
-
-<button type="button" class="btn btn-primary">ALL</button>
-<button type="button" class="btn btn-danger">SEO</button>
-<button type="button" class="btn btn-secondary">WEB DESIGN</button>
-<button type="button" class="btn btn-success">LOG DESIGN</button>
-<button type="button" class="btn btn-info">MARKETING</button>
-<button type="button" class="btn btn-danger">SOCIAL MEDIA</button>
-<button type="button" class="btn btn-warning">GRAPHIC DESIGN</button>
-
-</div>
-     
-  <div class="container my-5">
-      <div class="row">
-        <div class="col">
-          <img src="home-images/work7.jpeg" alt="" class="img-fluid">
         </div>
         <div class="col">
-        <img src="home-images/web6.jpg" alt="" class="img-fluid">
-        </div>
-        <div class="col">
-          <img src="home-images/work2.jpg" alt="" class="img-fluid">
-        </div>
-      </div>
-      <div class="row my-5">
-        <div class="col">
-          <img src="home-images/web5.jpeg" alt="" class="img-fluid">
-        </div>
-        <div class="col">
-        <img src="home-images/work1.jpg" alt="" class="img-fluid">
-        </div>
-        <div class="col">
-        <img src="home-images/web3.jpeg" alt="" class="img-fluid">
-        </div>
-      
-    </div>
-  </div>
-
-</section>
-
-<!-- SECTION 5: PRICING -->
-
-<section class="py-5" style="background-color: #D1D1D1;"> 
-  <div class="text-center pt-5"> 
-    <p class="h1" > OUR <span style="color:red">PRICING</span></p>
-<div class="container my-5">
-  <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
-    <div class="col">
-      <div class="card mb-4 rounded-3 shadow-sm">
-        <div class="card-header py-3">
-          <h4 class="my-0 fw-normal">Free</h4>
-        </div>
-        <div class="card-body">
-          <h1 class="card-title pricing-card-title">$0<small class="text-muted fw-light">/mo</small></h1>
-          <ul class="list-unstyled mt-3 mb-4">
-            <li>10 users included</li>
-            <li>2 GB of storage</li>
-            <li>Email support</li>
-            <li>Help center access</li>
-          </ul>
-          <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button>
+          <img src="/home-images/aboutus.jpeg" alt="">
         </div>
       </div>
     </div>
-    <div class="col">
-      <div class="card mb-4 rounded-3 shadow-sm">
-        <div class="card-header py-3">
-          <h4 class="my-0 fw-normal">Pro</h4>
-        </div>
-        <div class="card-body">
-          <h1 class="card-title pricing-card-title">$15<small class="text-muted fw-light">/mo</small></h1>
-          <ul class="list-unstyled mt-3 mb-4">
-            <li>20 users included</li>
-            <li>10 GB of storage</li>
-            <li>Priority email support</li>
-            <li>Help center access</li>
-          </ul>
-          <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card mb-4 rounded-3 shadow-sm border-primary">
-        <div class="card-header py-3 text-white bg-primary border-primary">
-          <h4 class="my-0 fw-normal">Enterprise</h4>
-        </div>
-        <div class="card-body">
-          <h1 class="card-title pricing-card-title">$29<small class="text-muted fw-light">/mo</small></h1>
-          <ul class="list-unstyled mt-3 mb-4">
-            <li>30 users included</li>
-            <li>15 GB of storage</li>
-            <li>Phone and email support</li>
-            <li>Help center access</li>
-          </ul>
-          <button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button>
-        </div>
-      </div>
-    </div>
-  </div>
-    </div>
 
-  </div>
 
   </section>
 
-  <!-- SECTION 6: OUR TEAM -->
-  <section class="py-5"> 
-    <div class="container"> 
-    <div class="text-center pt-5"> 
-      <p class="h1" ><span style="color:red">OUR</span> TEAM</p>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi, eius consequuntur dolor ut cum quaerat expedita aliquid perferendis.</p>
-      <div class="row mt-5">
-        <div class="col">
-          <img src="home-images/work7.jpeg" alt="" class="img-fluid">
-        </div>
-        <div class="col">
-        <img src="home-images/work1.jpg" alt="" class="img-fluid">
-        </div>
-        <div class="col">
-        <img src="home-images/web3.jpeg" alt="" class="img-fluid">
-        </div>
-      
-    </div>
-  </div>
-     </section>
+  <!-- SECTION 3: OUR SERVICES -->
 
-
-<!-- SECTION 7:CONTACT US -->
-
-<section class="py-5" style="background-color: #D1D1D1;">
-  <div class="container">
+  <section class="py-5" style="background-color: #D1D1D1;">
     <div class="text-center">
-      <h2>Get in touch</h2>
-      <p class="lead">Questions? Do not hesitate to contact us.</p>
-    </div>
-    <div class="row justify-content-center my-5">
-      <div class="col-lg-6">
-        <form action="">
-          <label for="email" class="form-label">Email:</label>
-          <input
-            type="email"
-            id="email"
-            placeholder="my@email.com"
-            class="form-control"
-          />
-          <div class="form-floating my-5">
-            <input
-              type="name"
-              id="name"
-              placeholder="e.g. Dawid"
-              class="form-control"
-            />
-            <label for="name" class="form-label">Name:</label>
-          </div>
-          <label for="subject" class="form=label">Subject</label>
-          <select name="subject" id="subject" class="form-select">
-            <option value="pricing">Pricing</option>
-            <option value="technical" selected>Technical question</option>
-            <option value="other">Other</option>
-          </select>
+      <p class="h1"> <span style="color:red">OUR</span> SERVICES</p>
 
-          <div class="form-floating my-5">
-            <textarea
-              name="query"
-              id="query"
-              style="height: 150px"
-              class="form-control"
-              placeholder="Write a message"
-            ></textarea>
+      <p>
+        ipsum dolor sit amet consectetur adipisicing elit. Vel sunt eaque sint autem consectetur dicta in nostrum illo nemo.
+      </p>
 
-            <label for="query">Write a message</label>
+      <div class="container my-5" style="background-color:#fff">
+        <div class="row" style="border:8px solid #D1D1D1">
+          <div class="col" style="border:8px solid #D1D1D1">
+            <i class="bi bi-display" style="font-size: 40px"></i>
+            <p class="h1"> WEB DESIGN</p>
+            <p>
+              ipsum dolor sit amet consectetur adipisicing elit. Vel sunt eaque sint autem consectetur dicta in nostrum illo nemo.
+            </p>
           </div>
+          <div class="col" style="background-color: red; border:8px solid #D1D1D1">
+            <i class="bi bi-pencil-square" style="font-size: 40px"></i>
+            <p class="h1"> GRAPHIC DESIGN</p>
+            <p>
+              ipsum dolor sit amet consectetur adipisicing elit. Vel sunt eaque sint autem consectetur dicta in nostrum illo nemo.
+            </p>
+          </div>
+          <div class="col" style="border:8px solid #D1D1D1">
+            <i class="bi bi-play-fill" style="font-size: 40px"></i>
+            <p class="h1"> TUTORING</p>
+            <p>
+              ipsum dolor sit amet consectetur adipisicing elit. Vel sunt eaque sint autem consectetur dicta in nostrum illo nemo.
+            </p>
+          </div>
+        </div>
+        <div class="row" style="border:8px solid #D1D1D1">
+          <div class="col" style="border:8px solid #D1D1D1">
+            <i class="bi bi-currency-dollar" style="font-size: 40px"></i>
+            <p class="h1"> MARKETING</p>
+            <p>
+              ipsum dolor sit amet consectetur adipisicing elit. Vel sunt eaque sint autem consectetur dicta in nostrum illo nemo.
+            </p>
+          </div>
+          <div class="col" style="border:8px solid #D1D1D1">
+            <i class="bi bi-search" style="font-size: 40px"></i>
+            <p class="h1"> SEO</p>
+            <p>
+              ipsum dolor sit amet consectetur adipisicing elit. Vel sunt eaque sint autem consectetur dicta in nostrum illo nemo.
+            </p>
+          </div>
+          <div class="col" style="border:8px solid #D1D1D1">
+            <i class="bi bi-facebook" style="font-size: 40px"></i>
+            <p class="h1"> SOCIAL MEDIA</p>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque hic impedit sunt repellendus, maiores nostrum illo reprehenderit.
 
-          <div class="text-center">
-            <button type="submit" class="btn btn-primary">Send!</button>
+            </p>
           </div>
-        </form>
+        </div>
       </div>
     </div>
-  </div>
 
-</section>
+  </section>
+
+  <!-- SECTION 4: OUR LATEST WORK -->
+
+  <section>
+
+    <section class="py-5" id="Portfolio">
+      <div class="text-center pt-3">
+        <p class="h1"> LATEST <span style="color:red">WORK</span></p>
+
+        <p>
+          ipsum dolor sit amet consectetur adipisicing elit. Vel sunt eaque sint autem consectetur dicta in nostrum illo nemo.
+        </p>
+        <div class="mt-5">
+
+          <button type="button" class="btn btn-primary">ALL</button>
+          <button type="button" class="btn btn-danger">SEO</button>
+          <button type="button" class="btn btn-secondary">WEB DESIGN</button>
+          <button type="button" class="btn btn-success">LOG DESIGN</button>
+          <button type="button" class="btn btn-info">MARKETING</button>
+          <button type="button" class="btn btn-danger">SOCIAL MEDIA</button>
+          <button type="button" class="btn btn-warning">GRAPHIC DESIGN</button>
+
+        </div>
+
+        <div class="container my-5">
+          <div class="row">
+            <div class="col">
+              <img src="home-images/work7.jpeg" alt="" class="img-fluid">
+            </div>
+            <div class="col">
+              <img src="home-images/web6.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col">
+              <img src="home-images/work2.jpg" alt="" class="img-fluid">
+            </div>
+          </div>
+          <div class="row my-5">
+            <div class="col">
+              <img src="home-images/web5.jpeg" alt="" class="img-fluid">
+            </div>
+            <div class="col">
+              <img src="home-images/work1.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col">
+              <img src="home-images/web3.jpeg" alt="" class="img-fluid">
+            </div>
+
+          </div>
+        </div>
+
+    </section>
+
+    <!-- SECTION 5: PRICING -->
+
+    <section class="py-5" style="background-color: #D1D1D1;" id="Pricing">
+      <div class="text-center pt-5">
+        <p class="h1"> OUR <span style="color:red">PRICING</span></p>
+        <div class="container my-5">
+          <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+            <div class="col">
+              <div class="card mb-4 rounded-3 shadow-sm">
+                <div class="card-header py-3">
+                  <h4 class="my-0 fw-normal">Free</h4>
+                </div>
+                <div class="card-body">
+                  <h1 class="card-title pricing-card-title">$0<small class="text-muted fw-light">/mo</small></h1>
+                  <ul class="list-unstyled mt-3 mb-4">
+                    <li>10 users included</li>
+                    <li>2 GB of storage</li>
+                    <li>Email support</li>
+                    <li>Help center access</li>
+                  </ul>
+                  <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card mb-4 rounded-3 shadow-sm">
+                <div class="card-header py-3">
+                  <h4 class="my-0 fw-normal">Pro</h4>
+                </div>
+                <div class="card-body">
+                  <h1 class="card-title pricing-card-title">$15<small class="text-muted fw-light">/mo</small></h1>
+                  <ul class="list-unstyled mt-3 mb-4">
+                    <li>20 users included</li>
+                    <li>10 GB of storage</li>
+                    <li>Priority email support</li>
+                    <li>Help center access</li>
+                  </ul>
+                  <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                <div class="card-header py-3 text-white bg-primary border-primary">
+                  <h4 class="my-0 fw-normal">Enterprise</h4>
+                </div>
+                <div class="card-body">
+                  <h1 class="card-title pricing-card-title">$29<small class="text-muted fw-light">/mo</small></h1>
+                  <ul class="list-unstyled mt-3 mb-4">
+                    <li>30 users included</li>
+                    <li>15 GB of storage</li>
+                    <li>Phone and email support</li>
+                    <li>Help center access</li>
+                  </ul>
+                  <button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- SECTION 6: OUR TEAM -->
+    <section class="py-5">
+      <div class="container">
+        <div class="text-center pt-5">
+          <p class="h1"><span style="color:red">OUR</span> TEAM</p>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi, eius consequuntur dolor ut cum quaerat expedita aliquid perferendis.</p>
+          <div class="row mt-5">
+            <div class="col">
+              <img src="home-images/work7.jpeg" alt="" class="img-fluid">
+            </div>
+            <div class="col">
+              <img src="home-images/work1.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col">
+              <img src="home-images/web3.jpeg" alt="" class="img-fluid">
+            </div>
+
+          </div>
+        </div>
+    </section>
+
+
+    <!-- SECTION 7:CONTACT US -->
+
+    <section class="py-5" style="background-color: #D1D1D1;" id="Contact">
+      <div class="container">
+        <div class="text-center">
+          <h2>Get in touch</h2>
+          <p class="lead">Questions? Do not hesitate to contact us.</p>
+        </div>
+        <div class="row justify-content-center my-5">
+          <div class="col-lg-6">
+            <form action="">
+              <label for="email" class="form-label">Email:</label>
+              <input type="email" id="email" placeholder="my@email.com" class="form-control" />
+              <div class="form-floating my-5">
+                <input type="name" id="name" placeholder="e.g. Dawid" class="form-control" />
+                <label for="name" class="form-label">Name:</label>
+              </div>
+              <label for="subject" class="form=label">Subject</label>
+              <select name="subject" id="subject" class="form-select">
+                <option value="pricing">Pricing</option>
+                <option value="technical" selected>Technical question</option>
+                <option value="other">Other</option>
+              </select>
+
+              <div class="form-floating my-5">
+                <textarea name="query" id="query" style="height: 150px" class="form-control" placeholder="Write a message"></textarea>
+
+                <label for="query">Write a message</label>
+              </div>
+
+              <div class="text-center">
+                <button type="submit" class="btn btn-primary">Send!</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 8: footer  -->
+
+    <section>
+      <footer class="bg-danger text-center text-black">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+          <!-- Section: Social media -->
+          <section class="mb-4">
+            <!-- Facebook -->
+            <a class="btn btn-floating m-1" href="#!" role="button">
+              <i class="bi bi-facebook"></i>
+            </a>
+
+            <!-- Twitter -->
+            <a class="btn btn-floating m-1"  href="#!" role="button">
+              <i class="bi bi-twitter"></i>
+            </a>
+
+            <!-- Google -->
+            <a class="btn btn-floating m-1"  href="#!" role="button">
+              <i class="bi bi-envelope-fill"></i>
+            </a>
+            <!-- Instagram -->
+            <a class="btn btn-floating m-1"  href="#!" role="button">
+              <i class="bi bi-instagram"></i>
+            </a>
+
+            <!-- Linkedin -->
+            <a class="btn btn-floating m-1"  href="#!" role="button">
+              <i class="bi bi-linkedin"></i>
+            </a>
+
+          </section>
+          <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3">
+          © 2022 Copyright:
+          <a class="text-black" href="https://mdbootstrap.com/">The7Devs</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+
+    </section>
 
     <!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
+
 </html>
